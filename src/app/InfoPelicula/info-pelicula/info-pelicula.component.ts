@@ -10,6 +10,15 @@ import { APIpeliculaService} from "../../apipelicula.service"
 export class InfoPeliculaComponent implements OnInit {
   title: string="";
   language: string="";
+  overview: string = "";
+  popularity: string="";
+  production_companies: string="";
+  budget: string="";
+  genres: string="";
+  status: string="";
+  release_date: string="";
+  backdrop_path: string="";
+  
 
   constructor(protected apiPelicula: APIpeliculaService) { }
 
@@ -17,7 +26,17 @@ export class InfoPeliculaComponent implements OnInit {
     this.apiPelicula.getMovieDetail("550")
     .subscribe(data=>{
       this.title=data["title"];
-      this.language=data["original-language"];
+      this.language=data["original_language"];
+      this.overview=data["overview"];
+      this.popularity=data["popularity"];
+      this.production_companies=data["production_companie"];
+      this.budget=data["budget"];
+      this.genres=data["genres"];
+      this.status=data["status"];
+      this.release_date=data["release_date"];
+      this.backdrop_path=data["backdrop_path"];
+
+
     })
 
 
