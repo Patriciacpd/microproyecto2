@@ -13,8 +13,17 @@ export class APIpeliculaService {
   getMovieDetail(id:string){ 
     return this.http.get(this.apiURL+"movie/"+id+this.apiKey);
   }
+
   getMovieByTitle(title:string){
     return this.http.get(this.apiURL+"search/movie"+this.apiKey+"&query="+title);
   }
+
+
+
+  getListMovies(){ 
+    return this.http.get(this.apiURL+"discover/movie"+this.apiKey);
+  }
+
+  
 
 }
