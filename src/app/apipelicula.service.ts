@@ -13,4 +13,10 @@ export class APIpeliculaService {
   getMovieDetail(id:string){ 
     return this.http.get(this.apiURL+"movie/"+id+this.apiKey);
   }
+
+  getListMovies(){ 
+    return this.http.get(this.apiURL+"discover/movie"+this.apiKey);
+  }
+
+  
 }
