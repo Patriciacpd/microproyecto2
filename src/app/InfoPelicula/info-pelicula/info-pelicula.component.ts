@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { APIpeliculaService} from "../../apipelicula.service"
 
 
+
 @Component({
   selector: 'app-info-pelicula',
   templateUrl: './info-pelicula.component.html',
@@ -43,3 +44,5 @@ export class InfoPeliculaComponent implements OnInit {
   }
 
 }
+
+
