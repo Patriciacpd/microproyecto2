@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="gapper">Películas</h1>
+  <i class="fas fa-search"></i>
+  <input type="text" placeholder="Buscar" id="busqueda" class="" (change)="filtrar()">
+  <div class="cards">
+
+    <div *ngFor="let pelicula of peliculas" class="mb-5" style="width: 15rem;">
+      <app-pelicula [pelicula]="pelicula"></app-pelicula>
+    </div>
+
+  </div>
+</div>
+
+<section class="ali">
+
+
+  <div *ngIf=!first>
+    <div class="col-md-4">
+      <button class="btn" (click)=consultar(prev)>Anterior</button>
+    </div>
+  </div>
+  <div *ngIf=!last>
+    <div class="col-md-4">
+      <button class="btn" (click)=consultar(next)>Siguiente</button>
+    </div>
+  </div>
+</section>
