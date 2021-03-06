@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+.modulo{
+	display:block;
+	width: 100%;
+	margin: 50px;
+	
+}
+
+#principales{
+	text-align: center;
+}
+
+.button {
+    padding-left: 90px;
+}
+button {
+    margin-left: 0.5rem;
+    position: relative;
+    right: -1rem;
+    cursor: pointer;
+    width: 40%;
+    height: 10%;
+    
+}
+
+form li + li {
+    margin-top: 1em;
+}    
+
+form {
+    text-align: left;
+}
+form {
+    margin: auto;
+    width: 400px;
+    padding: 1rem;
+    border: 1px solid rgb(2, 1, 1);
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+  
+}
+form {
+    display: block;
+    margin-block-end: 1em;
+}
+
+form ul{
+    list-style: none;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;;
+    
+    position: relative;
+    right: -2rem;
+}
+
+input,
+textarea {
+    width: 300px;
+    box-sizing: border-box; 
+    border: 1px solid silver;
+    position: relative;
+    right: -2rem;
+    
+}
+input:focus,
+textarea:focus {
+    border-color: #000;
+   
+}
+
+textarea {
+
+    vertical-align: top;
+    height: 5em;
+    position: relative;
+    right: -0.5rem;
+    
+
+}
+
+h2 {
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+

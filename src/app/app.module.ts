@@ -10,6 +10,7 @@ import { CrearReservaComponent } from './crearReserva/crear-reserva/crear-reserv
 import { RegistroComponent } from './Registro/registro/registro.component';
 
 import {ButtonsModule} from 'ngx-bootstrap/buttons';
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {ButtonsModule} from 'ngx-bootstrap/buttons';
   ],
   imports: [
     BrowserModule,
-    ButtonsModule
+    ButtonsModule,
+    TypeaheadModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
